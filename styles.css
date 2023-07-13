@@ -3,16 +3,14 @@ body {
   margin: 0;
   padding: 0;
   background-image: url('src/Mahakali Link.jpg');
-  background-size:cover;
+  background-size: cover;
   height: 100vh;
   background-position: top;
   background-repeat: no-repeat;
   background-color: #033431;
 }
 
-
 header {
-
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -35,29 +33,16 @@ main {
   margin: 0 auto;
   gap: 15px;
 }
+
 .subtitle p {
   color: white;
 }
- 
+
 .links-box {
   display: flex;
-  align-self: stretch;
   flex-direction: column;
-  justify-content: center;
   gap: 6px;
-}
-
-.link {
-  display: flex;
-  justify-content: center;
-  background-color: #f0f0f0;
-  width: -webkit-fill-available;
-  color: #333;
-  text-decoration: none;
-  padding: 15px 15px;
-  margin: 10px;
-  border-radius: 10px;
-  transition: background-color 0.3s;
+  align-self: stretch;
 }
 
 a {
@@ -65,14 +50,26 @@ a {
   text-decoration: none;
 }
 
-.links a:hover {
+.link {
+  display: flex;
+  justify-content: center;
+  background-color: #f0f0f0;
+  flex-grow: 1;
+  color: #333;
+  text-decoration: none;
+  padding: 1rem;
+  margin: 10px;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+.link:hover {
   background-color: #ccc;
 }
 
-.sublinks{
+.sublinks {
   display: flex;
 }
-
 
 #sharePopup {
   display: none;
@@ -86,18 +83,6 @@ a {
   z-index: 9999;
 }
 
-#sharePopup {
-  /* ... Existing styles ... */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: white;
-  border-radius: 10px;
-  padding: 30px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  z-index: 999;
-}
 .shareContainer {
   display: flex;
   align-items: center;
@@ -108,14 +93,7 @@ a {
   margin-right: 10px;
 }
 
-#copyButton {
-  background-color: #4caf50;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  cursor: pointer;
-}
-
+#copyButton,
 #whatsappButton,
 #emailButton {
   background-color: #25d366;
@@ -127,6 +105,10 @@ a {
   display: block;
   text-align: center;
   border-radius: 5px;
+}
+
+#copyButton {
+  background-color: #4caf50;
 }
 
 #closeButton {
@@ -141,21 +123,53 @@ a {
   color: #999;
 }
 
-  #popupHeading {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 10px;
+#popupHeading {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 1024px) {
+  body {
+    background-image: url('src/Mahakali Link Tablet.jpg');
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    background-image: url('src/Mahakali Link mobile.jpg');
   }
 
-  @media only screen and (max-width: 1024px) {
-    body {
-      background-image: url('src/Mahakali\ Link\ Tablet.jpg');
-    }
+  #content {
+    max-width: 100%;
+    padding: 10px;
   }
-  
-  @media only screen and (max-width: 480px) {
-    body {
-      background-image: url('src/Mahakali\ Link\ mobile.jpg');
-    }
+
+  .link {
+    margin: 5px;
+    padding: 0.8rem;
   }
-  
+
+  .subtitle p {
+    font-size: 16px;
+  }
+}
+#content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 700px;
+  margin: 0 auto;
+  gap: 15px;
+}
+
+.logo {
+  text-align: center;
+}
+
+.logo img {
+  max-width: 80%;
+  height: auto;
+}
