@@ -235,3 +235,13 @@ a {
   transform: scale(1.05);
 }
 
+@media (max-width: 480px) {
+  .feature-icons img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .feature-icons {
+    gap: 16px;
+  }
+}
