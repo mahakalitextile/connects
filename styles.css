@@ -181,27 +181,29 @@ a {
 }
 .link-wrapper {
   background: linear-gradient(93deg, #EABD5E 2.86%, #FADF80 44.92%, #EBC064 86.98%);
-  padding: 1px;
-  border-radius: 8px;
+  padding: 1px; /* Only 1px border */
+  border-radius: 12px;
+  display: inline-block;
 }
 
 .link {
   background-color: #f0f0f0;
+  border-radius: 11px; /* Slightly smaller to fit inside wrapper */
   padding: 1rem;
-  border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: background-color 0.3s;
   font-weight: bold;
+  text-decoration: none;
+  color: #333;
 }
 
 .link i {
   margin-right: 8px;
+  font-size: 24px;
 }
 
 .link:hover {
   background-color: #ccc;
 }
-
-
