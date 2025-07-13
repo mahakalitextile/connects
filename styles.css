@@ -180,30 +180,39 @@ a {
   }
 }
 .link-wrapper {
-  background: linear-gradient(93deg, #EABD5E 2.86%, #FADF80 44.92%, #EBC064 86.98%);
-  padding: 1px; /* Only 1px border */
-  border-radius: 12px;
-  display: inline-block;
+  background: linear-gradient(93deg, #EABD5E, #FADF80, #EBC064);
+  padding: 1px;
+  border-radius: 10px;
+  display: flex;
 }
 
 .link {
-  background-color: #f0f0f0;
-  border-radius: 11px; /* Slightly smaller to fit inside wrapper */
-  padding: 1rem;
+  background-color: #fff;
+  color: #333;
+  text-decoration: none;
+  border-radius: 9px;
+  padding: 12px 16px;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex: 1;
+  font-weight: 600;
+  gap: 10px; /* Spacing between icon and text */
+  font-size: 16px;
   transition: background-color 0.3s;
-  font-weight: bold;
-  text-decoration: none;
-  color: #333;
 }
 
 .link i {
-  margin-right: 8px;
   font-size: 24px;
+  flex-shrink: 0;
 }
 
 .link:hover {
-  background-color: #ccc;
+  background-color: #f9f9f9;
 }
+.sublinks {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
