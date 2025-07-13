@@ -11,7 +11,7 @@ body {
 }
 
 header {
-  padding: 20px;
+  padding: 30px;
   display: flex;
   justify-content: space-between;
 }
@@ -160,7 +160,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 700px;
+  max-width: 600px;
   margin: 0 auto;
   gap: 15px;
 }
@@ -225,7 +225,7 @@ a {
 }
 
 .feature-icons img {
-  width: 100px;
+  width: 150px;
   height: 100px;
   object-fit: contain;
   transition: transform 0.3s ease;
