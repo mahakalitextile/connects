@@ -1,14 +1,22 @@
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-image: url('src/Mahakali Link.jpg');
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
   background-position: top;
   background-repeat: no-repeat;
   background-color: #033431;
 }
+
+html, body {
+  height: auto;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
 
 header {
   padding: 30px;
@@ -137,6 +145,10 @@ a {
 }
 
 @media only screen and (max-width: 480px) {
+  
+  header{
+    padding:50px;
+  }
   body {
     background-image: url('src/Mahakali Link mobile.jpg');
   }
@@ -144,11 +156,15 @@ a {
   #content {
     max-width: 100%;
     padding: 10px;
+    gap: 24px;
   }
 
   .link {
     margin: 5px;
     padding: 0.8rem;
+  }
+  .links-box{
+    gap: 24px;
   }
 
   .subtitle p {
