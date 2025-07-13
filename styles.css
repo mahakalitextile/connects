@@ -181,14 +181,14 @@ a {
 }
 .link-wrapper {
   background: linear-gradient(93deg, #EABD5E 2.86%, #FADF80 44.92%, #EBC064 86.98%);
-  padding: 2px;
-  border-radius: 12px;
+  padding: 1px;
+  border-radius: 8px;
 }
 
 .link {
   background-color: #f0f0f0;
   padding: 1rem;
-  border-radius: 10px;
+  border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
