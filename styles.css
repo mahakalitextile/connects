@@ -244,10 +244,16 @@ a {
   .feature-icons {
     gap: 16px;
   }
-  .link-wrapper {
-  background: linear-gradient(93deg, #EABD5E, #FADF80, #EBC064);
-  padding: 0px;
-  border-radius: 10px;
-  display: flex;
 }
+
+/* Mobile: remove gradient border */
+@media (max-width: 480px) {
+  .link-wrapper {
+    background: none;
+    padding: 0;
+  }
+
+  .link {
+    border-radius: 10px; /* Keep nice shape */
+  }
 }
